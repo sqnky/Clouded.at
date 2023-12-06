@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+/*General*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(31, 31, 31, 0.35);
+}
+
+/*Navbar CSS*/
+li, a, button{
+    font-family: Nunito, serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 98, 0);
+    text-decoration: none;
+}
+.logo{
+    position: absolute;
+    cursor: pointer;
+    width: 200px;
+    margin-right: auto;
+    left: 50px;
+}
+nav{
+    background-color: transparent;
+    overflow: hidden;
+}
+.nav_links{
+    list-style: none;
+    background-color: transparent;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: rgb(1, 151, 197);
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 0;
+    background-color: rgb(31, 31, 31);
+}
+button {
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.add{
+    background-color: rgb(1, 151, 197);
+    font-weight: bolder;
+    padding: 9px 25px;
+}
+button:hover {
+    background-color: rgba(1, 151, 197, 0.8);
+}
+
+/*Add Directory Button Pulse Effect*/
+@-webkit-keyframes pulse-grow-on-hover {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+@keyframes pulse-grow-on-hover {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+.pulse-grow-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.pulse-grow-on-hover:hover, .pulse-grow-on-hover:focus, .pulse-grow-on-hover:active {
+    -webkit-animation-name: pulse-grow-on-hover;
+    animation-name: pulse-grow-on-hover;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+/*Input Search Bar Nav*/
+.box{
+    display: inline-flex;
+    margin-right: auto;
+    position: relative;
+    left: 300px;
+}
+.box i{
+    margin-right: 10px;
+    transform: translate(0, 4px);
+    color: rgb(1, 151, 197);
+    font-size: 30px;
+}
+.input {
+    padding: 10px;
+    width: 450px;
+    height: 40px;
+    background: none;
+    border: 2px solid rgb(255, 98, 0);
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Nunito, serif;
+    font-size: 15px;
+    color: rgb(255, 98, 0);
+    outline: none;
+    transition: .5s;
+}
+
+/*Sidebar*/
+.main-container{
+    min-height: 100vh;
+    display: flex;
+}
+.sidebar{
+    min-width: 250px;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+}
+.sidebar_links li{
+    margin-left: 30px;
+    display: flex;
+    margin-inline: auto;
+}
+.innerText{
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: Nunito, serif;
+    padding: 20px 0;
+}
+@media only screen and (max-width: 992px) {
+    .sidebar{
+        display: none;
+    }
+    .box{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .box{
+        display: none;
+    }
+}
+.sidebar_links li a{
+    transition: all 0.3s ease 0s;
+}
+.sidebar_links li a i{
+    padding: 0 5px;
+}
+.sidebar_links li a:hover{
+    color: rgb(1, 151, 197);
+}
+ul{
+    min-width: 25vh;
+}
+/*Progress Bar*/
+.progress-bar {
+    position: relative;
+    height: 8px;
+    width: 150px;
+    border-radius: 50px;
+    border: 1px solid rgb(152, 152, 152);
+    margin-left: 30px;
+}
+.storage_Text{
+    margin-left: 30px;
+    font-size: 10px;
+    font-weight: 200;
+    padding-top: 10px;
+    color: rgb(152, 152, 152);
+}
+/*Extend Cloud Button*/
+.extend{
+    color: rgb(152, 152, 152);
+    margin-top: 20px;
+    padding: 7px 10px;
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 30px;
+    border-radius: 80px;
+    border: 1px solid rgb(1, 151, 197);
+    background-color: transparent;
+}
+.extend:hover {
+    background-color: rgb(1, 151, 197);
+    border: 1px solid rgb(255, 98, 0);
+    color: rgb(31, 31, 31);
+}
+/*Content*/
+h1{
+    font-size: 100px;
+    color: black;
+    justify-content: center;
+}
