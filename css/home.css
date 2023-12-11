@@ -204,8 +204,6 @@ ul{
     color: rgb(31, 31, 31);
 }
 /*Content*/
-h1{
-    font-size: 100px;
-    color: black;
-    justify-content: center;
+.content{
+    display: flex;
 }

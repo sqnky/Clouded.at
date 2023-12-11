@@ -49,10 +49,13 @@ body {
     background-color: #404040;
 }
 
+
 .content {
     flex-grow: 1;
     padding: 20px;
 }
+
+
 .logo-navbar {
     width: 150px;
     margin: 20px;
