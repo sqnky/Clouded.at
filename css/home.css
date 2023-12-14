@@ -4,7 +4,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgba(31, 31, 31, 0.35);
+}
+
+body{
+    background-color: rgba(31, 31, 31);
 }
 
 /*Navbar CSS*/
@@ -125,10 +128,10 @@ button:hover {
 
 /*Sidebar*/
 .main-container{
-    min-height: 100vh;
     display: flex;
 }
 .sidebar{
+    min-height: 100vh;
     min-width: 250px;
     background-color: rgb(31, 31, 31);
     display: flex;
