@@ -25,23 +25,21 @@ li, a, button{
     margin-right: auto;
     left: 50px;
 }
-nav{
-    background-color: transparent;
-    overflow: hidden;
-}
 .nav_links{
     list-style: none;
-    background-color: transparent;
 }
 .nav_links li{
     display: inline-block;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 .nav_links li a{
     transition: all 0.3s ease 0s;
+    border-radius: 200px;
+    padding: 10px;
 }
 .nav_links li a:hover{
     color: rgb(1, 151, 197);
+    background-color: #555555;
 }
 header {
     display: flex;
@@ -59,10 +57,8 @@ button {
 .add{
     background-color: rgb(1, 151, 197);
     font-weight: bolder;
-    padding: 9px 25px;
-}
-button:hover {
-    background-color: rgba(1, 151, 197, 0.8);
+    padding: 9px 10px;
+    margin-left: 20px;
 }
 
 /*Add Directory Button Pulse Effect*/
@@ -161,14 +157,19 @@ button:hover {
         display: none;
     }
 }
+.sidebar_links li{
+    border-radius: 50px;
+}
 .sidebar_links li a{
     transition: all 0.3s ease 0s;
-}
-.sidebar_links li a i{
-    padding: 0 5px;
+    padding: 20px 10px;
 }
 .sidebar_links li a:hover{
     color: rgb(1, 151, 197);
+}
+.sidelink:hover{
+    background-color: #555555;
+    transition: all 0.3s ease 0s;
 }
 ul{
     min-width: 25vh;
@@ -192,19 +193,17 @@ ul{
 /*Extend Cloud Button*/
 .extend{
     color: rgb(152, 152, 152);
-    margin-top: 20px;
-    padding: 7px 10px;
+    padding: 7px 7px;
     font-size: 15px;
     font-weight: 100;
-    margin-left: 30px;
+    margin-left: 20px;
     border-radius: 80px;
     border: 1px solid rgb(1, 151, 197);
     background-color: transparent;
 }
 .extend:hover {
-    background-color: rgb(1, 151, 197);
     border: 1px solid rgb(255, 98, 0);
-    color: rgb(31, 31, 31);
+    color: rgb(255, 98, 0);
 }
 /*Content*/
 .content{
