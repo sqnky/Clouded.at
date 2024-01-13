@@ -1,0 +1,101 @@
+/*
+Info Content
+ */
+.mid-container {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    height: 160vh;
+}
+
+.mid-header {
+    margin-top: 30px;
+    width: 60%;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+hr.solid {
+    border-top: 1px solid var(--grey);
+    border-radius: 50px;
+}
+
+.mid-content{
+    width: 50%;
+    position: absolute;
+    margin-top: 120px;
+}
+
+.mid-about {
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.mid-about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.mid-about p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.mid-about ul li{
+    margin-left: 40px;
+}
+
+.mid-team {
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mid-teamcard {
+    display: flex;
+    border-radius: 30px;
+    position: relative;
+    margin: 20px;
+}
+
+.teamcard-content{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.teamcard-img {
+    margin: 20px;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.teamcard-text {
+    position: relative;
+    margin-top: 20px;
+}
+
+.teamcard-socials{
+    display: flex;
+}
+
+.teamcard-icon i{
+    font-size: xx-large;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.teamcard-icon :hover{
+    color: var(--white);
+    background-color: var(--black);
+    transition: all 0.2s ease 0s;
+}
