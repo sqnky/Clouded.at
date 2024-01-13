@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 /*General*/
+:root {
+    --grey: #bbbbbb;
+    --white: #ffffff;
+    --black: #000000;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +12,7 @@
 }
 
 body{
-    background-color: rgba(31, 31, 31);
+    background-color: var(--white);
 }
 
 /*Navbar CSS*/
@@ -15,38 +20,38 @@ li, a, button{
     font-family: Nunito, serif;
     font-weight: 500;
     font-size: 16px;
-    color: rgb(255, 98, 0);
+    color: var(--black);
     text-decoration: none;
 }
 .logo{
     position: absolute;
     cursor: pointer;
-    width: 200px;
-    margin-right: auto;
-    left: 50px;
+    width: 350px;
+    object-fit: cover;
+    left: 0;
 }
 .nav_links{
     list-style: none;
+    margin: 20px;
 }
 .nav_links li{
     display: inline-block;
-    padding: 10px 20px;
 }
 .nav_links li a{
-    transition: all 0.3s ease 0s;
     border-radius: 200px;
-    padding: 10px;
+    padding: 15px 25px;
 }
 .nav_links li a:hover{
-    color: rgb(1, 151, 197);
-    background-color: #555555;
+    color: var(--white);
+    background-color: var(--grey);
+    transition: all 0.3s ease 0s;
 }
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 30px 0;
-    background-color: rgb(31, 31, 31);
+    background-color: var(--white);
 }
 button {
     border: none;
@@ -55,71 +60,14 @@ button {
     transition: all 0.3s ease 0s;
 }
 .add{
-    background-color: rgb(1, 151, 197);
+    background-color: var(--grey);
     font-weight: bolder;
     padding: 9px 10px;
     margin-left: 20px;
 }
-
-/*Add Directory Button Pulse Effect*/
-@-webkit-keyframes pulse-grow-on-hover {
-    to {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-}
-@keyframes pulse-grow-on-hover {
-    to {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-}
-.pulse-grow-on-hover {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.pulse-grow-on-hover:hover, .pulse-grow-on-hover:focus, .pulse-grow-on-hover:active {
-    -webkit-animation-name: pulse-grow-on-hover;
-    animation-name: pulse-grow-on-hover;
-    -webkit-animation-duration: 0.6s;
-    animation-duration: 0.6s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-}
-
-/*Input Search Bar Nav*/
-.box{
-    display: inline-flex;
-    margin-right: auto;
-    position: relative;
-    left: 300px;
-}
-.box i{
-    margin-right: 10px;
-    transform: translate(0, 4px);
-    color: rgb(1, 151, 197);
-    font-size: 30px;
-}
-.input {
-    padding: 10px;
-    width: 450px;
-    height: 40px;
-    background: none;
-    border: 2px solid rgb(255, 98, 0);
-    border-radius: 10px;
-    box-sizing: border-box;
-    font-family: Nunito, serif;
-    font-size: 15px;
-    color: rgb(255, 98, 0);
-    outline: none;
-    transition: .5s;
+.add :hover{
+    background-color: var(--white);
+    border: 1px solid var(--black);
 }
 
 /*Sidebar*/
@@ -129,7 +77,7 @@ button {
 .sidebar{
     min-height: 100vh;
     min-width: 250px;
-    background-color: rgb(31, 31, 31);
+    background-color: var(--white);
     display: flex;
 }
 .sidebar_links li{
@@ -160,22 +108,21 @@ button {
 .sidebar_links li{
     border-radius: 50px;
 }
+.sidelink :hover{
+    color: var(--white);
+    background-color: var(--grey);
+}
 .sidebar_links li a{
     transition: all 0.3s ease 0s;
     padding: 20px 10px;
-}
-.sidebar_links li a:hover{
-    color: rgb(1, 151, 197);
-}
-.sidelink:hover{
-    background-color: #555555;
-    transition: all 0.3s ease 0s;
+    border-radius: 50px;
 }
 ul{
     min-width: 25vh;
 }
 /*Progress Bar*/
 .progress-bar {
+    margin-top: 20px;
     position: relative;
     height: 8px;
     width: 150px;
