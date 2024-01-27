@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/settings.css">
     <link rel="stylesheet" href="../css/content.css">
     <script src="../js/content.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -50,20 +50,61 @@
             <hr class="hr1">
             <ul class="contentStructure">
                 <li>
+                    <h2 style="margin-left: 55px">Storage</h2>
+                    <div class="progress-bar"></div>
+                    <p class="storage_Text">0MB used of 15 GB</p>
+                    <a href="#">
+                        <button class="extendCloudS">Extend Cloud Storage</button>
+                    </a>
+                    <hr class="hr2">
+                </li>
 
+                <li>
+                    <h2 style="margin-left: 55px; margin-bottom: 30px">Density</h2>
+                    <div class="containerradio">
+                        <input type="radio" class="radio-label" name="densitySetting" id="cosyDensity" value="cosy" onchange="changeDensitySetting(this.value)">
+                        <label for="cosyDensity">Comfortable</label>
+                    </div>
 
+                    <div class="containerradio">
+                        <input checked type="radio" class="radio-label" name="densitySetting" id="compactDensity" value="compact" onchange="changeDensitySetting(this.value)">
+                        <label for="compactDensity">Cosy</label>
+                    </div>
+
+                    <div class="containerradio" style="margin-bottom: 30px">
+                        <input type="radio" class="radio-label" name="densitySetting" id="comfortableDensity" value="comfortable" onchange="changeDensitySetting(this.value)">
+                        <label for="comfortableDensity">Compact</label>
+                    </div>
+                    <hr class="hr2">
                 </li>
                 <li>
-
-
+                    <h2 style="margin-left: 55px; margin-bottom: 30px">Browser</h2>
+                    <div class="containerradio" >
+                        <label>
+                            <input type="radio" class="radio-label"  style="margin-bottom: 20px">
+                        </label>
+                        <label for="cosyDensity">Get updates about Clouded items in your browser</label>
+                    </div>
+                    <hr class="hr2">
                 </li>
                 <li>
-
+                    <h2 style="margin-left: 55px; margin-bottom: 30px">Email Address</h2>
+                    <div class="containerradio" >
+                        <label>
+                            <input type="radio" class="radio-label"  style="margin-bottom: 20px">
+                        </label>
+                        <label >Get all updates about Clouded items via Email</label>
+                    </div>
+                    <hr class="hr2">
                 </li>
                 <li>
-
+                    <div class="containerradio" >
+                        <button class="button save-button">Save</button>
+                        <button class="button dont-save-button">Don't Save</button>
+                    </div>
                 </li>
             </ul>
+
         </div>
     </div>
 </div>

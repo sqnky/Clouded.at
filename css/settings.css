@@ -1,76 +1,261 @@
-body {
-    font-family: 'Nunito', sans-serif;
-    background-color: rgba(31, 31, 31, 0.83);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+/*General*/
+:root {
+    --grey: #bbbbbb;
+    --white: #ffffff;
+    --black: #000000;
+}
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
-.settings-container {
-    display: flex;
+body{
+    background-color: var(--white);
 }
 
-.sidebar {
-    width: 250px;
-    background-color: rgba(31, 31, 31, 0.83);
-    color: rgb(255, 98, 0);
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    left: 0;
-    top: 124px;
-    height: 100%;
+/*Navbar CSS*/
+li, a, button{
+    font-family: Nunito, serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--black);
+    text-decoration: none;
 }
-.sidebar-header {
-    padding: 20px;
-    text-align: left;
-}
-
-.sidebar-menu {
-    flex-grow: 1;
-}
-
-.menu-option {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-
+.logo{
+    position: absolute;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    width: 350px;
+    object-fit: cover;
+    left: 0;
 }
-
-.menu-option i {
-    margin-right: 10px;
-}
-
-.menu-option:hover {
-    background-color: #404040;
-}
-
-
-.content {
-    flex-grow: 1;
-    padding: 20px;
-}
-
-
-.logo-navbar {
-    width: 150px;
+.nav_links{
+    list-style: none;
     margin: 20px;
-    padding-left: 200px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+}
+.nav_links li{
+    display: inline-block;
+}
+.nav_links li a{
+    border-radius: 200px;
+    padding: 15px 25px;
+}
+.nav_links li a:hover{
+    color: var(--white);
+    background-color: var(--grey);
+    transition: all 0.3s ease 0s;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 0;
+    background-color: var(--white);
+}
+button {
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.add{
+    background-color: var(--grey);
+    font-weight: bolder;
+    padding: 9px 10px;
+    margin-left: 20px;
+}
+.add :hover{
+    background-color: var(--white);
+    border: 1px solid var(--black);
 }
 
-.navbar {
-    background-color: rgba(31, 31, 31, 0.83);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-
+/*Sidebar*/
+.main-container{
+    display: flex;
+}
+.sidebar{
+    min-height: 100vh;
+    min-width: 250px;
+    background-color: var(--white);
+    display: flex;
+}
+.sidebar_links li{
+    margin-left: 30px;
+    display: flex;
+    margin-inline: auto;
+}
+.innerText{
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: Nunito, serif;
+    padding: 20px 0;
+}
+@media only screen and (max-width: 992px) {
+    .sidebar{
+        display: none;
+    }
+    .box{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .box{
+        display: none;
+    }
+}
+.sidebar_links li{
+    border-radius: 50px;
+}
+.sidelink :hover{
+    color: var(--white);
+    background-color: var(--grey);
+    width: 200px;
+}
+.sidebar_links li a{
+    transition: all 0.3s ease 0s;
+    padding: 20px 10px;
+    width: 200px;
+    border-radius: 50px;
+}
+ul{
+    min-width: 25vh;
 }
 
 
+/*Progress Bar*/
+.progress-bar {
+    margin-top: 20px;
+    position: relative;
+    height: 8px;
+    width: 200px;
+    border-radius: 50px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-left: 55px;
+}
+.storage_Text{
+    margin-left: 55px;
+    font-size: 15px;
+    font-weight: 200;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+}
+/*Extend Cloud Button*/
+.extend{
+    color: rgb(152, 152, 152);
+    padding: 7px 7px;
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 20px;
+    border-radius: 80px;
+    border: 1px solid rgb(1, 151, 197);
+    background-color: transparent;
+}
+.extend:hover {
+    border: 1px solid rgb(255, 98, 0);
+    color: rgb(255, 98, 0);
+}
+/*Content*/
+.content{
+    display: flex;
+}
+/*hr*/
+.hr1{
+    border: solid 1px #696969;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 700px;
+}
+
+.contentStructureSettings{
+    list-style: none;
+    width: 90%;
+    height: 800px;
+    border-radius: 30px;
+}
+
+/*content*/
+.extendCloudS{
+    color: rgb(87, 87, 87);
+    padding: 7px 7px;
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 55px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 80px;
+    border: 1px solid rgb(1, 151, 197);
+    background-color: transparent;
+}
+.extendCloudS:hover {
+    border: 1px solid rgb(255, 98, 0);
+    color: rgb(255, 98, 0);
+}
+
+.hr2{
+    border: solid 1px #696969;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 530px;
+}
+
+/* Additional CSS for styling radio buttons */
+.containerradio{
+    margin-left: 55px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+input[type="radio"] {
+    transform: scale(1.5);
+}
+
+.radio-label {
+    transform: scale(1.5);
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px;
+    border: 2px solid rgb(1, 151, 197);
+    border-radius: 5px;
+    margin: 5px;
+    background-color: white; /* Default background color for unchecked state */
+    color: rgb(1, 151, 197); /* Default text color for unchecked state */
+}
+
+input[type="radio"]:checked + label.radio-label {
+    background-color:rgb(1, 151, 197);
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.save-button {
+
+    background-color: rgb(166, 165, 165); /* Green */
+    border: 1px solid #000000;
+    color: black;
+}
+
+.dont-save-button {
+    background-color: #696969;
+    border: 1px solid #000000;
+    color: black;
+}
+
+/* Hover effect */
+.button:hover {
+    color: rgb(45, 45, 45);
+    transition: all 0.3s ease 0s;
+}
