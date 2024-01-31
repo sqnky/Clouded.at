@@ -7,7 +7,7 @@
     <script src="../js/content.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://kit.fontawesome.com/29110f81dc.js" crossorigin="anonymous"></script>
-    <title>Home</title>
+    <title>Settings</title>
 </head>
 <body>
 <header>
@@ -29,13 +29,13 @@
     <aside class="sidebar">
         <ul class="sidebar_links">
             <li class="sidelink">
-                <a href="#" class="innerText" onclick="goBack()"><i style="cursor: pointer" class="fa-solid fa-arrow-left"></i>   Back</a>
+                <a class="innerText" onclick="goBack()"><i style="cursor: pointer" class="fa-solid fa-arrow-left"></i>   Back</a>
             </li>
             <li class="sidelink">
-                <a href="#" class="innerText"><i class="fa-solid fa-gear"></i> General</a>
+                <a href="./settings.html" class="innerText"><i class="fa-solid fa-gear"></i> General</a>
             </li>
             <li>
-                <a class="" href="#">
+                <a class="" href="./extendstorage.html">
                     <button class="extend">Extend Cloud Storage</button>
                 </a>
             </li>
@@ -54,7 +54,7 @@
                     <div class="progress-bar"></div>
                     <p class="storage_Text">0MB used of 15 GB</p>
                     <a href="#">
-                        <button class="extendCloudS">Extend Cloud Storage</button>
+                        <a href="./extendstorage.html"><button class="extendCloudS">Extend Cloud Storage</button></a>
                     </a>
                     <hr class="hr2">
                 </li>
@@ -99,9 +99,18 @@
                 </li>
                 <li>
                     <div class="containerradio" >
-                        <button class="button save-button">Save</button>
-                        <button class="button dont-save-button">Don't Save</button>
+                        <button onclick="saveChanges()" class="button save-button">Save</button>
+
+                        <button onclick="showConfirmationDialogue()" class="button dont-save-button">Don't Save</button>
                     </div>
+                    <div id="popup"></div>
+                    <div id="confirmationDialogue" style="text-align: left">
+                        <p style="margin-bottom: 20px">Are you sure you don't want to save your changes?</p>
+                        <hr>
+                        <button onclick="dontSaveChanges()">Don't Save</button>
+                        <button onclick="cancelConfirmation()">Cancel</button>
+                    </div>
+
                 </li>
             </ul>
 
