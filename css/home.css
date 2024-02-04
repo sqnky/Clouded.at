@@ -118,12 +118,12 @@ button {
 .sidebar_links li a{
     transition: all 0.3s ease 0s;
     padding: 20px 10px;
+    width: 200px;
     border-radius: 50px;
 }
 ul{
     min-width: 25vh;
 }
-
 /*Progress Bar*/
 .progress-bar {
     margin-top: 20px;
@@ -161,4 +161,12 @@ ul{
 /*Content*/
 .content{
     display: flex;
+}
+/*hr*/
+.hr1{
+    border: solid 1px #696969;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 700px;
 }

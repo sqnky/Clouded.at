@@ -1,0 +1,164 @@
+:root {
+    --grey: #bbbbbb;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+
+
+body{
+    background-color: var(--white);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+/*Navbar CSS*/
+li, a, button{
+    font-family: Nunito, serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--black);
+    text-decoration: none;
+}
+.logo{
+    position: absolute;
+    cursor: pointer;
+    width: 350px;
+    object-fit: cover;
+    left: 0;
+}
+.nav_links{
+    list-style: none;
+    margin: 20px;
+}
+.nav_links li{
+    display: inline-block;
+}
+.nav_links li a{
+    border-radius: 200px;
+    padding: 15px 25px;
+}
+.nav_links li a:hover{
+    color: var(--white);
+    background-color: var(--grey);
+    transition: all 0.3s ease 0s;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 0;
+    background-color: var(--white);
+}
+button {
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.add{
+    background-color: var(--grey);
+    font-weight: bolder;
+    padding: 9px 10px;
+    margin-left: 20px;
+}
+.add :hover{
+    background-color: var(--white);
+    border: 1px solid var(--black);
+}
+
+h1 {
+    color: #333;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.plan {
+    width: 300px;
+    height: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgb(26,115,232);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-left: 30px;
+}
+.benefits{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+.benefit{
+    width: 250px;
+    margin: 30px;
+}
+
+
+
+
+.plantype{
+    font-size: 22px;
+    color: #333;
+    margin-top: 10px;
+}
+.storagesize{
+    font-size: 28px;
+    color: #333;
+    margin-top: 8px;
+}
+.price {
+    font-size: 25px;
+    color: #333;
+    margin-top: 20px;
+}
+.thereafter{
+    font-size: 15px;
+    color: #575757;
+    margin-top: 5px;
+}
+.cancel{
+    font-size: 12px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.features {
+    margin-top: 20px;
+    color: #777;
+    text-align: left;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color:rgb(26,115,232);
+    border: 2px solid rgb(26,115,232);
+    transition: opacity 0.2s ease-in-out;
+    margin-top: 50px;
+}
+
+.button:hover {
+    opacity: 0.80;
+}
+
+.disabled {
+    cursor: not-allowed;
+    background-color: #ccc;
+    border: 2px solid #ccc;
+}
+
