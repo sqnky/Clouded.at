@@ -1,76 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
-/*General*/
-:root {
-    --grey: #bbbbbb;
-    --white: #ffffff;
-    --black: #000000;
-}
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Nunito, serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--black);
-    text-decoration: none;
-}
-
-body{
-    background-color: var(--white);
-}
-
-/*Navbar CSS*/
-li, a, button{
-    font-family: Nunito, serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--black);
-
-
-}
-.logo{
-    position: absolute;
-    cursor: pointer;
-    width: 350px;
-    object-fit: cover;
-    left: 0;
-}
-.nav_links{
-    list-style: none;
-    margin: 20px;
-
-}
-.nav_links li{
-    display: inline-block;
-
-}
-.nav_links li a{
-    border-radius: 200px;
-    padding: 15px 25px;
-}
-.nav_links li a:hover{
-    color: var(--white);
-    background-color: var(--grey);
-    transition: all 0.3s ease 0s;
-}
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 0;
-    background-color: var(--white);
-
-}
-
 /* Container */
 .login-container {
+    font-family: Nunito, serif;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 75vh;
     margin: 0;
     text-align: center;
+}
+
+.solid{
+    margin-bottom: 10px;
+}
+
+.text-deco{
+    text-decoration-line: underline;
 }
 
 /* Login Box */
@@ -109,8 +53,6 @@ input {
     font-size: 16px;
 }
 
-
-
 /* Login Button */
 button {
     background-color: var(--black);
@@ -125,10 +67,4 @@ button {
 button:hover {
     background-color: #333;
     transition: background-color 0.3s ease;
-}
-
-.hr1{
-    border: solid 1px var(--grey);
-    border-radius: 50px;
-    margin-bottom: 20px
 }

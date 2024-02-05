@@ -2,7 +2,8 @@ function goBack() {
     window.history.back();
 }
 function scrollToTop() {
-    document.body.scrollIntoView({
+    window.scrollTo({
+        top: 0,
         behavior: "smooth"
     });
 }
